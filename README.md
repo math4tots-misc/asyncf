@@ -42,7 +42,7 @@ const asyncSleep = function(timeInMillis) {
 // You can just start asyncMain by calling it, or
 asyncMain();
 
-// if you wanted for asyncMain to finish, you can
+// if you wanted to do something after asyncMain finishes, you can
 // start a local 'async' context.
 asyncf.start(function*() {
   yield asyncMain();
