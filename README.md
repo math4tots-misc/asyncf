@@ -12,13 +12,15 @@ const asyncf = require('asyncf');
 
 const asyncMain = asyncf(function*() {
 
-  // calling 'yield' on a Promise means that this part of the code
-  // will wait until that promise is resolved.
+  // Using 'yield' on a Promise causes the function to
+  // wait *asynchronously* until that promise is resolved.
   //
-  // If it succeeds, the 'yield' expression will return the resolved
-  // value,
-  // If it fails, it will throw an exception.
+  // If the promise resolves successfully,
+  // the yield expression will return the resolved value,
   //
+  // If the promise rejects, an exception will throw be at the
+  // yield site.
+
 
   yield asyncSleep(100);  // should return 'waking up now!'
 
