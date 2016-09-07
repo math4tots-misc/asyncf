@@ -1,0 +1,24 @@
+{
+  "name": "asyncf",
+  "version": "1.0.0",
+  "description": "async/await-like helper for use in ES6 code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/math4tots/asyncf.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "asyncf"
+  ],
+  "author": "math4tots",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/math4tots/asyncf/issues"
+  },
+  "homepage": "https://github.com/math4tots/asyncf#readme"
+}
