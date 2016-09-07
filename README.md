@@ -1,6 +1,6 @@
 # asyncf
 
-async/await shims for ES6.
+Tools for being able to code like you already have async/await in ES6.
 
 Where you would use 'async function', you can use 'asyncf(function*...)'.
 Where you would use 'await ...', you can use 'yield ...'.
