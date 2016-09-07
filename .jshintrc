@@ -1,0 +1,17 @@
+{
+  "strict": true,
+  "curly": true,
+  "eqeqeq": true,
+  "maxlen": 80,
+  "varstmt": true,
+  "undef": true,
+  "predef": [
+    "require",
+    "module",
+    "process",
+    "console",
+    "__dirname",
+    "setTimeout"
+  ],
+  "esversion": 6
+}

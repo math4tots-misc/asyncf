@@ -6,8 +6,6 @@
 
 // On the other hand, async/await isn't available on ECMA2015 at all.
 
-// jshint esversion: 6
-
 function asyncf(generator) {
   "use strict";
   return function() {
@@ -46,4 +44,20 @@ function _asyncfHelper(generatorObject, resolve, reject, arg, isErr) {
   }
 }
 
+function start(generator) {
+  "use strict";
+  return asyncf(generator)();
+}
+
+function sleep(timeInMillis) {
+  "use strict";
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve();
+    }, timeInMillis);
+  });
+}
+
+asyncf.start = start;
+asyncf.sleep = sleep;
 module.exports = asyncf;
