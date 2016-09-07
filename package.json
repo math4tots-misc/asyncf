@@ -1,6 +1,6 @@
 {
   "name": "asyncf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "async/await-like helper for use in ES6 code",
   "main": "index.js",
   "scripts": {
