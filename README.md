@@ -18,7 +18,7 @@ const asyncMain = asyncf(function*() {
   // If the promise resolves successfully,
   // the yield expression will return the resolved value,
   //
-  // If the promise rejects, an exception will throw be at the
+  // If the promise rejects, an exception will be thrown at the
   // yield site.
 
 
