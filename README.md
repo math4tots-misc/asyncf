@@ -52,3 +52,24 @@ asyncf.start(function*() {
 
 An asynchronous function is just a function that returns a Promise.
 
+
+## another example
+
+If your old code used to look like
+
+```javascript
+
+asyncDownloadFileFoo().then(contentsOfFoo => {
+  asyncDownloadFileBar().then(contentsOfBar => {
+    useFooAndBar(contentsOfFoo, contentsOfBar);
+  });
+});
+
+```
+
+You can now just write
+
+```javascript
+useFooAndBar(yield asyncDownloadFileFoo(), yield asyncDownloadFileBar());
+```
+
